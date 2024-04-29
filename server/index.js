@@ -18,9 +18,9 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
 
-const _dirname = path.dirname("");
-const buildpath = path.join(_dirname,"../client/build")
-app.use(express.static(buildpath));
+// const _dirname = path.dirname("");
+// const buildpath = path.join(_dirname,"../client/build")
+// app.use(express.static(buildpath));
 
 const PORT = 8000;
 const username = process.env.DB_USERNAME;
